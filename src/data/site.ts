@@ -12,8 +12,7 @@ export const site = {
   location: "Bangladesh",
   email: "mohammadroni0187@gmail.com",
   github: "https://github.com/mohammadroni0187-arch",
-  // TODO: Replace with your real LinkedIn profile URL.
-  linkedin: "https://www.linkedin.com/",
+  linkedin: "https://www.linkedin.com/in/md-roni-2034733a2/",
   /** Drop your real resume at `public/resume.pdf` — this link downloads it. */
   resumePath: "/resume.pdf",
   education: {

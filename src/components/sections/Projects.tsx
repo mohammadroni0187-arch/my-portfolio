@@ -7,6 +7,16 @@ import { Reveal } from "@/components/common/Reveal";
 const projects = [
   {
     number: "01",
+    title: "Book-Nook",
+    category: "Online Library Management Application",
+    description:
+      "BookNook is an online library management application focused on organizing books and managing borrowing activities. The project uses a modern frontend with a separate backend API and MongoDB database.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "MongoDB", "Better Auth, Node.js, Express.js, JWT"],
+    demo: "online-library-qtj5.vercel.app",
+    featured: true,
+  },
+  {
+    number: "02",
     title: "Bazer-dor",
     category: "E-commerce Web Application",
     description:
@@ -16,7 +26,7 @@ const projects = [
     featured: true,
   },
   {
-    number: "02",
+    number: "03",
     title: "Dev Stack Website",
     category: "Responsive Frontend Website",
     description:
@@ -27,7 +37,7 @@ const projects = [
     featured: false,
   },
   {
-    number: "03",
+    number: "04",
     title: "Fit Log",
     category: "Workout Tracking Web Application",
     description:
@@ -38,7 +48,7 @@ const projects = [
     featured: false,
   },
    {
-    number: "04",
+    number: "05",
     title: "DevConf Website",
     category: "Responsive Frontend Website",
     description:

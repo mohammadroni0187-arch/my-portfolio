@@ -1,17 +1,13 @@
-"use client";
-
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowUp, Heart } from "lucide-react";
 import { site } from "@/data/site";
 import { SocialLinks } from "@/components/common/SocialLinks";
 
-export function Footer() {
-  const [year, setYear] = useState<number | string>(2026);
-
-  useEffect(() => {
-    setYear(new Date().getFullYear());
-  }, []);
+export async function Footer() {
+  // `new Date()` is blocked during prerender under `cacheComponents`; caching
+  // the value lets Next.js bake it into the static shell at build time.
+  "use cache";
+  const year = new Date().getFullYear();
 
   return (
     <footer className="border-t border-white/10 bg-slate-950 px-6 py-10 sm:px-8">
