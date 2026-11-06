@@ -11,7 +11,7 @@ const projects = [
     category: "Online Library Management Application",
     description:
       "BookNook is an online library management application focused on organizing books and managing borrowing activities. The project uses a modern frontend with a separate backend API and MongoDB database.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "MongoDB", "Better Auth, Node.js, Express.js, JWT"],
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "MongoDB", "Better Auth", " Node,js", "Express.js", "JWT"],
     demo: "online-library-qtj5.vercel.app",
     featured: true,
   },
