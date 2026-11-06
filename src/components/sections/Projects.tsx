@@ -23,7 +23,7 @@ const projects = [
       "A modern web project built with Next.js and TypeScript, focused on a clean user interface and responsive experience.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "MongoDB", "Better Auth"],
     demo: "https://bazer-dor-web-site.vercel.app",
-    featured: true,
+    featured: false,
   },
   {
     number: "03",
