@@ -6,7 +6,28 @@ import { Reveal } from "@/components/common/Reveal";
 
 const projects = [
   {
-    number: "01",
+  number: "01",
+  title: "MentorLagbe",
+  category: "Online Tuition & Tutor Finding Platform",
+  description:
+    "MentorLagbe is a full-stack tuition management platform designed to connect students with tutors, simplify tuition discovery, and manage tuition applications. It includes role-based dashboards for students, tutors, and administrators.",
+  technologies: [
+    "Next.js",
+    "React.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Better Auth",
+    "JWT",
+    "Stripe"
+  ],
+  demo: "https://mentorlagbe-client-one.vercel.app",
+  featured: true,
+},
+  {
+    number: "02",
     title: "Book-Nook",
     category: "Online Library Management Application",
     description:
@@ -16,7 +37,7 @@ const projects = [
     featured: true,
   },
   {
-    number: "02",
+    number: "03",
     title: "Bazer-dor",
     category: "E-commerce Web Application",
     description:
@@ -26,7 +47,7 @@ const projects = [
     featured: false,
   },
   {
-    number: "03",
+    number: "04",
     title: "Dev Stack Website",
     category: "Responsive Frontend Website",
     description:
@@ -37,7 +58,7 @@ const projects = [
     featured: false,
   },
   {
-    number: "04",
+    number: "05",
     title: "Fit Log",
     category: "Workout Tracking Web Application",
     description:
@@ -48,7 +69,7 @@ const projects = [
     featured: false,
   },
    {
-    number: "05",
+    number: "06",
     title: "DevConf Website",
     category: "Responsive Frontend Website",
     description:

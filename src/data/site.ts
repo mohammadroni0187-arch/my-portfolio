@@ -6,7 +6,7 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
  * Update these values once and the Hero, Contact, Footer and Navbar all update.
  */
 export const site = {
-  name: "Mohammad Roni",
+  name: "MD. Roni",
   image: "/Image.png",
   role: "Full-Stack Web Developer",
   location: "Bangladesh",
