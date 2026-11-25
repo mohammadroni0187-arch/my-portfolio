@@ -59,7 +59,8 @@ export function Contact() {
 
   return (
     <Section id="contact" label="Contact" className="relative overflow-hidden border-t border-slate-800 bg-slate-950">
-      <div aria-hidden="true" className="pointer-events-none absolute top-1/3 left-1/2 -z-0 h-72 w-72 -translate-x-1/2 rounded-full bg-cyan-500/10 blur-[100px]" />
+      <div aria-hidden="true" className="bg-grid pointer-events-none absolute inset-0 opacity-60" />
+      <div aria-hidden="true" className="pointer-events-none absolute top-1/3 left-1/2 -z-0 h-80 w-80 -translate-x-1/2 rounded-full bg-cyan-500/15 blur-[120px]" />
 
       <div className="relative z-10 grid gap-14 lg:grid-cols-2 lg:gap-20">
         {/* Left: message + direct contact methods */}
@@ -69,7 +70,7 @@ export function Contact() {
             title={
               <>
                 Let&apos;s build something
-                <span className="block text-cyan-400">great together.</span>
+                <span className="text-gradient block">great together.</span>
               </>
             }
             description="I'm open to frontend development opportunities, freelance projects and collaborations. Feel free to reach out if you'd like to work together."
@@ -85,7 +86,7 @@ export function Contact() {
                     href={social.href}
                     target={social.external ? "_blank" : undefined}
                     rel={social.external ? "noreferrer" : undefined}
-                    className="group flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[0.03] p-4 transition duration-300 hover:border-cyan-400/30 hover:bg-white/[0.05] focus-visible:ring-2 focus-visible:ring-cyan-400/60 focus-visible:outline-none sm:p-5"
+                    className="group flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[0.03] p-4 transition duration-300 hover:-translate-y-0.5 hover:border-cyan-400/40 hover:bg-white/[0.05] focus-visible:ring-2 focus-visible:ring-cyan-400/60 focus-visible:outline-none sm:p-5"
                   >
                     <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-cyan-400 transition duration-300 group-hover:bg-cyan-400 group-hover:text-slate-950">
                       <Icon size={21} aria-hidden="true" />
@@ -127,7 +128,7 @@ export function Contact() {
             onSubmit={handleSubmit}
             noValidate
             aria-label="Contact form"
-            className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-8"
+            className="rounded-3xl border border-white/10 bg-gradient-to-b from-white/[0.06] to-white/[0.02] p-6 shadow-2xl shadow-cyan-950/20 sm:p-8"
           >
             <h3 className="text-xl font-semibold text-white">Send me a message</h3>
             <p className="mt-2 text-sm text-slate-400">

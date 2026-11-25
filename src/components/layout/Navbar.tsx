@@ -6,6 +6,7 @@ import { ArrowUpRight, Menu, X } from "lucide-react";
 import { cn } from "cn";
 import { navLinks, sectionIds, site } from "@/data/site";
 import { useActiveSection } from "@/hooks/use-active-section";
+import { ScrollProgress } from "@/components/common/ScrollProgress";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +36,7 @@ export function Navbar() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/[0.08] bg-slate-950/80 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-white/[0.08] bg-slate-950/75 backdrop-blur-xl supports-[backdrop-filter]:bg-slate-950/60">
       <nav aria-label="Main" className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8">
         {/* Logo */}
         <Link
@@ -137,6 +138,7 @@ export function Navbar() {
           </li>
         </ul>
       </div>
+      <ScrollProgress />
     </header>
   );
 }

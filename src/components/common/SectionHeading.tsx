@@ -10,15 +10,30 @@ type SectionHeadingProps = {
 };
 
 export function SectionHeading({ eyebrow, title, description, align = "left", className }: SectionHeadingProps) {
-  return (
-    <div className={cn(align === "center" && "mx-auto max-w-2xl text-center", className)}>
-      <p className="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">{eyebrow}</p>
+  const centered = align === "center";
 
-      <h2 className="mt-4 text-3xl font-bold tracking-tight text-balance text-white sm:text-5xl">
+  return (
+    <div className={cn(centered && "mx-auto max-w-2xl text-center", className)}>
+      <p
+        className={cn(
+          "inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.3em] text-cyan-400",
+          centered && "justify-center",
+        )}
+      >
+        <span aria-hidden="true" className="h-px w-10 bg-gradient-to-r from-transparent to-cyan-400" />
+        {eyebrow}
+        {centered ? (
+          <span aria-hidden="true" className="h-px w-10 bg-gradient-to-l from-transparent to-cyan-400" />
+        ) : null}
+      </p>
+
+      <h2 className="mt-5 text-3xl font-bold tracking-tight text-balance text-white sm:text-5xl">
         {title}
       </h2>
 
-      {description ? <p className="mt-5 leading-8 text-slate-400">{description}</p> : null}
+      {description ? (
+        <p className="mt-5 text-base leading-8 text-slate-400 sm:text-lg">{description}</p>
+      ) : null}
     </div>
   );
 }
